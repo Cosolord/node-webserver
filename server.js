@@ -44,6 +44,12 @@ app.get('/about', function(req, res) {
   });
 });
 
+app.get("/project", function(req, res){
+  res.render("project", {
+    pageTitle: "Project Page"
+  });
+});
+
 app.get('/bad', function(req, res) {
   res.send({
     errore: 'Status 400'
